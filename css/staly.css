@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "nunito";
+    src: url('../recursos/fonts/Nunito-SemiBoldItalic.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.body{
+    width: 1366px;
+    height: 768px;
+}
+
+.logo2{
+    width: 150px;
+   
+}
+
+.nav {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+
+}
+
+.nav ul {
+    list-style-type: none;
+    background-color: rgba(24, 196, 99, 0.751);
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    border: 1px solid gray;
+    text-align: center;
+    line-height: 40px;   
+
+}
+
+.menu{
+        border-color: rgba(128, 128, 128, 0.562);
+        border-radius: 5px;
+
+}
+.menu2{
+      text-decoration: none;
+      color: white;
+
+}
+
+.main {
+    display: flex;
+    
+}
+
+.imagen-pediatrics{
+    display: grid;
+}
+
+
+/* font-weigt- estilo de letras */
+.bold {
+    font-family: "nunito";
+    font-size: 20px;
+    color: white;
+    background-color: rgba(31, 213, 76, 0.821);
+    border-radius: 20px;
+    text-align: center;
+    width: 850px;
+    padding: 20px;
+    border: 20px;
+    margin: 20px 10px 20px;
+    display: inline-block;
+
+
+}
+
+
+/* font-size- Tamaño de fuente */
+
+
+
+/* backgound.color- fondo de color  */
+.parrafo {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    color: orangered;
+    background-color: rgba(128, 128, 128, 0.495);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding: 40px;
+}
+
+/* list-style-type- tipo de estilo de lista */
+.no-ordenada {
+    list-style-type: none;
+
+}
+
+.lista-ordenada {
+    color: grey;
+    display: flex;
+
+}
+
+.imagen-pediatrics {
+    width: 30px;
+    display: grid;
+    width: 350px;
+    margin: 2opx;
+    
+}
+
+.img2 {
+    width: 300px;
+
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Especialista */
+
+.Especialist {
+    font-family: "nunito";
+    font-weight: 50px;
+    color: green;
+    background-color: rgba(187, 195, 28, 0.66);
+    text-align: center;
+    display: inline;
+
+}
+
+.varios {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    color: green;
+    background-color: rgba(153, 205, 50, 0.692);
+    text-align: center;
+
+}
+
+.especialista2 {
+    list-style-type: none;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    color: rgb(0, 128, 41);
+    text-align: center;
+    text-decoration: none;
+
+}
+
+
+
+/* CONTACTO */
+
+.contacto {
+    color: green;
+    background-color: aliceblue;
+}
