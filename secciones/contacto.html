@@ -1,58 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/staly.css">
-    <title>PEDIATRICS-HTML</title>
+    <title>Pediatrics- html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
-
-    <header class="header">
-        <!-- log0-->
-        <div class="logo">
-            <a href="#"></a><img class="logo2" src="../recursos/img/logo-pediatrics-removebg-preview.png" alt="logo">
+    <!-- nav bootstrap -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand p-0 d-flex flex-row align-items-center justify-content-center flex-wrap"
+                href="./index.html">
+                <img width="150" src="../recursos/img/logo-pediatrics-removebg-preview.png" alt="Logo">
+            </a>
+            <!-- boton hamburgesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- nav+ search -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-">
+                    <li class="nav-item ">
+                        <a class="nav-link fst-normal active" aria-current="page"
+                            href="Inicio.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fst-normal active" aria-current="page"
+                            href="Especialista.html">ESPECIALISTAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fst-normal active" aria-current="page"
+                            href="contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fst-normal active" href="quiero-un-turno.html">QUIERO UN
+                            TURNO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fst-normal active" href="Servicios.html">SERVICIOS</a>
+                    </li>
+                </ul>
+                <!-- buscador -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
+    </nav>
+    <header>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+</body>
 
-        <nav class="nav">
-            <!-- Anchor-ancla (a) enlaces relativos-->
-            <!-- Listas -->
-            <!-- unordered list-lista no ordenada (se usa para menu) -->
-            <ul>
-                <li class="lista"><a class="menu" href="../index.html">Inicio</a></li>
-                <li class="lista"><a class="menu" href="../secciones/Especialista.html">Especialista</a></li>
-                <li class="lista"><a class="menu" href="../secciones/contacto.html">contacto</a></li>
-                <li class="lista"><a class="menu" href="../secciones/quiero-un-turno.html">Quiero un turno</a></li>
-                <li class="lista"><a class="menu" href="../secciones/Servicios.html">Servicios</a></li>
-            </ul>
-        </nav>
-    </header>
-    <form action="?"method= "get">
-        <label>Nombre completo</label>
-        <label for="Nombre completo"></label>
-        <br>
-        <input type="text" placeholder="Nombre completo" name="indentidad">
-        <br><br>
-        <label>Email</label>
-        <br>
-        <input type="email" required name="email">
-        <br><br>
-        <label for="">Enviar mensaje</label>
-        <br><br>
-        <input type="text " placeholder="Escriba un mensaje qui">
-         <br><br>
-         <input type="submit">
+</html>
+<main>
 
-    </form>
+<section class="formulario">
+    <form class="form2" action="?" method="get">
+        <h6>CONTACTANOS</h6>
+        <p>Estamos para ayudarte</p>
+        <div class="group">
+            <label for="name">Nombre completo</label>
+            <input type="text" name="name" id="name" placeholder="Nombre completo">
+            <label for="phone">Telefono</label>
+            <input type="tel" name="phone" id="phone" placeholder="ejem: 297-*">
+            <label for="email">Email</label>
+            <input type="email" required name="email" id="email" placeholder="Email">
+            <label for="message">Enviar mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
 
-    <!-- pie de pagina -->
-    <footer class="footer">
+            <input class="btn" type="submit" value=" Enviar">
+        </div>
+    </section>
+</main>
+
+
+<!-- pie de pagina -->
+<footer class="footer">
+    <div class="logo3">
+        <img class="logoblanco" src="../recursos/img/logo_en_blanco-removebg-preview.png" alt="logo3">
+    </div>
+    <div class="parrafo1">
+        <p>Direccion Sarmiento 664-Comodoro Rivdavia</p>
+    </div>
+    <div class="parrafo2">
+        <i class="fa-brands fa-whatsapp fa-2xs" style="color: #ffffff;"></i>
+    </div>
+    <section class="ubicacion">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11114.242133229227!2d-67.484158!3d-45.860094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde454515c77b65b%3A0x3f2b2fb93038341a!2sSarmiento%20664%2C%20U9000%20Comodoro%20Rivadavia%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1692923872539!5m2!1ses-419!2sar"
+            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</footer>
+<footer class="footer1">
+    <section class="footer2">
         <p>© 2023 Pediatrics. Todos los derechos reservados.</p>
         <p>Diseño web-paola p.</p>
-    </footer>
+    </section>
+
+</footer>
 
 </body>
 
-</html
+</html>

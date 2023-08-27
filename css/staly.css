@@ -10,22 +10,32 @@
     padding: 0px;
 }
 
-.body{
-    width: 1366px;
-    height: 768px;
-}
+
 
 .logo2{
     width: 150px;
-   
+
 }
 
 .nav {
     font-family: "PT Sans", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 
 }
 
+a.navbar-nav{
+    border-bottom: .1px solid #e0e0e0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    }
+
+.nav-item {
+     color: #181c28
+
+
+}
+
+/*  
 .nav ul {
     list-style-type: none;
     background-color: rgba(24, 196, 99, 0.751);
@@ -33,7 +43,7 @@
     grid-template-columns: repeat(5, 2fr);
     border: 1px solid gray;
     text-align: center;
-    line-height: 40px;   
+    line-height: 40px;
 
 }
 
@@ -50,7 +60,7 @@
 
 .main {
     display: flex;
-    
+
 }
 
 .imagen-pediatrics{
@@ -58,8 +68,8 @@
 }
 
 
-/* font-weigt- estilo de letras */
-.bold {
+/* font-weigt- estilo de letras 
+ bold
     font-family: "nunito";
     font-size: 20px;
     color: white;
@@ -71,26 +81,13 @@
     border: 20px;
     margin: 20px 10px 20px;
     display: inline-block;
+    */
 
 
-}
+
 
 
 /* font-size- Tamaño de fuente */
-
-
-
-/* backgound.color- fondo de color  */
-.parrafo {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    color: orangered;
-    background-color: rgba(128, 128, 128, 0.495);
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    padding: 40px;
-}
 
 /* list-style-type- tipo de estilo de lista */
 .no-ordenada {
@@ -104,23 +101,40 @@
 
 }
 
-.imagen-pediatrics {
-    width: 30px;
-    display: grid;
-    width: 350px;
-    margin: 2opx;
-    
-}
 
 .img2 {
     width: 300px;
 
 }
+footer{
+    background-color: rgb(121, 204, 20);
+    display: flex;
+    justify-content: space-evenly;
+}
 
-.footer {
-    background-color: black;
+.logoblanco{
+    width: 150px;
+    padding: 20px;
+}
+.parrafo1{
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer1{
+    background-color: black;
+    color: white;
+    height: 75px;
+    text-align: center;
+
+
+}
+
+.ubicacion{
+    width: 20px;
 }
 
 /* Especialista */
@@ -144,21 +158,116 @@
 
 }
 
-.especialista2 {
+
+.container{
     list-style-type: none;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     color: rgb(0, 128, 41);
+    padding: 30px;
     text-align: center;
     text-decoration: none;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 40px;
+    justify-content: center
+    
+    
+   
+}
 
+.conteiner2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgb(82, 173, 17);
+    color: white;
+    border-radius: 20px;
+    height: 60px
+}
+
+.conteiner2:hover{
+    transform: translate(-5px, -5px);
+    background: rgba(200, 7, 149, 0.736);
 }
 
 
 
 /* CONTACTO */
 
-.contacto {
-    color: green;
-    background-color: aliceblue;
+.formulario{
+    display: flex;
+    justify-content: center
+
+}
+
+.form2 {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgb(0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+h6 {
+display: flex;
+color: green;
+
+}
+
+label{
+    color: rgb(156, 174, 159);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+padding: 17px 25px;
+border-radius: 25px;
+margin-bottom: 20px;
+background-color: rgba(193, 244, 139, 0.725);
+border: 2px solid ghostwhite;
+color: antiquewhite;
+outline: none;
+}
+
+
+
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    text-align: space-between;
+    text-align: center;
+
+}
+
+.form-txt a {
+    color: rgb(63, 197, 202);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.bnt{
+    font-size: 16px;
+    color: #FFFF;
+    border: 0;
+    border-radius: 25PX;
+    background-color: green;
+    box-shadow: 0 0 20PX rgba(0, 128, 0, 0.626);
+    cursor: pointer;
+
+}
+
+.bnt:hover{
+    background-color: green;
 }
