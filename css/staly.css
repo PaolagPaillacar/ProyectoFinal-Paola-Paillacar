@@ -196,9 +196,12 @@ footer{
 
 /* CONTACTO */
 
+
 .formulario{
+    padding: 50px;
     display: flex;
     justify-content: center
+    
 
 }
 
@@ -207,7 +210,7 @@ footer{
     box-shadow: 0 0 20px rgb(0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
-    width: 340px;
+    width: 600px;
 }
 
 .group{
@@ -257,17 +260,7 @@ outline: none;
     text-decoration: none;
 }
 
-.bnt{
-    font-size: 16px;
-    color: #FFFF;
-    border: 0;
-    border-radius: 25PX;
-    background-color: green;
-    box-shadow: 0 0 20PX rgba(0, 128, 0, 0.626);
-    cursor: pointer;
 
-}
 
-.bnt:hover{
-    background-color: green;
-}
+
+
