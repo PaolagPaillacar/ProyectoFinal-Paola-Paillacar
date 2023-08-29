@@ -1,37 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/staly.css">
-    <title>Inicio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/staly.css">
+  <title>Pediatrics- html</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
-<header class="header">
-    <!-- log0-->
-    <div class="logo">
-        <a href="#"></a><img class="logo2" src="../recursos/img/logo-pediatrics-removebg-preview.png" alt="logo">
+<body>
+  <!-- nav bootstrap -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <!-- logo -->
+      <a class="navbar-brand p-0 d-flex flex-row align-items-center justify-content-center flex-wrap"
+        href="./index.html">
+        <img width="150" src="./recursos/img/logo-pediatrics-removebg-preview.png" alt="Logo">
+      </a>
+      <!-- boton hamburgesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- nav+ search -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-">
+          <li class="nav-item ">
+            <a class="nav-link fst-normal active" aria-current="page" href="../index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fst-normal active" aria-current="page"
+              href="./secciones/Especialista.html">ESPECIALISTAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fst-normal active" aria-current="page" href="./secciones/contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fst-normal active" href="./secciones/quiero-un-turno.html">QUIERO UN TURNO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fst-normal active" href="./secciones/Servicios.html">SERVICIOS</a>
+          </li>
+        </ul>
+        <!-- buscador -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./recursos/img/img2.png" class="img-fluid max-width: w-100: auto " alt="pediatrics1">
+        </div>
+        <div class="carousel-item">
+          <img src="./recursos/img/img1.png" class="" alt="pediatrics2">
+        </div>
+        <div class="carousel-item">
+          <img src="./recursos/img/img3.png" class=" alt="pediatrics3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <main>
+  </main>
+  <!-- 1 carta -->
+  <section class="container row justify-content-center m-auto ">
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Turnos</h5>
+        <p class="card-text">Solicite su turno para Especialista</p>
+        <a href="#" class="btn btn-primary">Sacar un turno</a>
+      </div>
     </div>
 
-    <nav class="nav">
-        <!-- Anchor-ancla (a) enlaces relativos-->
-        <!-- Listas -->
-        <!-- unordered list-lista no ordenada (se usa para menu) -->
-        <ul>
-            <li class="lista"><a class="menu" href="../index.html">Inicio</a></li>
-            <li class="lista"><a class="menu" href="../secciones/Especialista.html">Especialista</a></li>
-            <li class="lista"><a class="menu" href="../secciones/contacto.html">contacto</a></li>
-            <li class="lista"><a class="menu" href="../secciones/quiero-un-turno.html">Quiero un turno</a></li>
-            <li class="lista"><a class="menu" href="../secciones/Servicios.html">Servicios</a></li>
-        </ul>
-    </nav>
+    <!-- 2 carta -->
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cartilla Medica</h5>
+        <p class="card-text"></p>
+        <a href="#" class="btn btn-primary">Ver mas</a>
+      </div>
+    </div>
+    <!-- carta3 -->
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Servicios</h5>
+        <p class="card-text"></p>
+        <a href="#" class="btn btn-primary">Ver mas</a>
+      </div>
+    </div>
+    </div>
+  </section>
+  </main>
 
-    <!--ordered List- Lista ordenada -->
-    <ol>
-        <!-- enlaces abosultos -->
-        <li><a href="https://www.facebook.com/pediatrics.comodoro/" target="_blank">facebook</a></li>
-    </ol>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- pie de pagina -->
+<footer class="footer">
+  <div class="logo3">
+    <img class="logoblanco" src="./recursos/img/logo_en_blanco-removebg-preview.png" alt="logo3">
+  </div>
+  <div class="parrafo1">
+    <p>Direccion Sarmiento 664-Comodoro Rivdavia</p>
+  </div>
+  <div class="parrafo2">
+    <i class="fa-brands fa-whatsapp fa-2xs" style="color: #ffffff;"></i>
+  </div>
+  <section class="ubicacion">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11114.242133229227!2d-67.484158!3d-45.860094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde454515c77b65b%3A0x3f2b2fb93038341a!2sSarmiento%20664%2C%20U9000%20Comodoro%20Rivadavia%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1692923872539!5m2!1ses-419!2sar"
+      width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+</footer>
+<footer class="footer1">
+  <section class="footer2">
+    <p>© 2023 Pediatrics. Todos los derechos reservados.</p>
+    <p>Diseño web-paola p.</p>
+  </section>
+
+</footer>
 
 </body>
 

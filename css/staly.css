@@ -3,7 +3,8 @@
     src: url('../recursos/fonts/Nunito-SemiBoldItalic.ttf');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Quicksand:wght@400;500;700&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,500&display=swap');
+
 
 * {
     margin: 0px;
@@ -17,22 +18,25 @@
 
 }
 
-.nav {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
+.navbar-collapse {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 200;
 
+   
 }
 
 a.navbar-nav{
-    border-bottom: .1px solid #e0e0e0;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    font-family: "Roboto Flex";
+    font-weight: 200;
+   
     }
 
-.nav-item {
-     color: #181c28
 
-
+.carousel-item img{
+     width: 80%;
+     margin: auto;
+     display: flex;
+     justify-content: center;
 }
 
 /*  
@@ -138,11 +142,14 @@ footer{
 }
 
 /* Especialista */
+.imagen{
+    width: 700px;
+}
 
 .Especialist {
     font-family: "nunito";
     font-weight: 50px;
-    color: green;
+    color: rgb(248, 248, 248);
     background-color: rgba(187, 195, 28, 0.66);
     text-align: center;
     display: inline;
@@ -163,7 +170,6 @@ footer{
     list-style-type: none;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
-    color: rgb(0, 128, 41);
     padding: 30px;
     text-align: center;
     text-decoration: none;
@@ -171,6 +177,7 @@ footer{
     grid-template-columns: 300px 300px;
     gap: 40px;
     justify-content: center
+    
     
     
    
@@ -181,15 +188,16 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    background-color: rgb(82, 173, 17);
-    color: white;
+    color: rgb(97, 97, 93);
+    border-style: solid;
+    border-color: rgb(102, 206, 76);
     border-radius: 20px;
     height: 60px
 }
 
 .conteiner2:hover{
     transform: translate(-5px, -5px);
-    background: rgba(200, 7, 149, 0.736);
+    background: rgba(206, 231, 19, 0.736);
 }
 
 
@@ -197,7 +205,12 @@ footer{
 /* CONTACTO */
 
 
+
+
+
 .formulario{
+    background: linear-gradient(136deg, #8ac646, #e2ec83);
+    color: #d8dad3;
     padding: 50px;
     display: flex;
     justify-content: center
@@ -206,11 +219,15 @@ footer{
 }
 
 .form2 {
+    display: flex;
+    flex-direction: row; 
     padding: 50px 55px;
+    background: white;
     box-shadow: 0 0 20px rgb(0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
-    width: 600px;
+    width: 800px;
+    
 }
 
 .group{
@@ -220,11 +237,21 @@ footer{
 
 }
 
-h6 {
-display: flex;
-color: green;
-
+.contact1{
+    display: grid;
+    color: black;
+    align-content: center;
+    justify-content: center;
+    width: 300px;
+    margin: 0 0 30px;
+    
 }
+
+.contact1 h1{
+    font-size: 35px;
+    color: rgba(23, 22, 22, 0.827);
+}
+
 
 label{
     color: rgb(156, 174, 159);
