@@ -1,61 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/staly.css">
-    <title>PEDIATRICS-HTML</title>
+    <title>Pediatrics- html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
-
-    <header class="header">
-        <!-- log0-->
-        <div class="logo">
-            <a href="#"></a><img class="logo2" src="../recursos/img/logo-pediatrics-removebg-preview.png" alt="logo">
+    <!-- nav bootstrap -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand p-0 d-flex flex-row align-items-center justify-content-center flex-wrap"
+                href="./index.html">
+                <img width="150" src="../recursos/img/logo-pediatrics-removebg-preview.png" alt="Logo">
+            </a>
+            <!-- boton hamburgesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- nav+ search -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" aria-current="page"
+                            href="../secciones/Especialista.html">ESPECIALISTAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" aria-current="page" href="../secciones/contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../secciones/quiero-un-turno.html">QUIERO UN TURNO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../secciones/Servicios.html">SERVICIOS</a>
+                    </li>
+                </ul>
+                <!-- buscador -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 
-        <nav class="nav">
-            <!-- Anchor-ancla (a) enlaces relativos-->
-            <!-- Listas -->
-            <!-- unordered list-lista no ordenada (se usa para menu) -->
-            <ul>
-                <li class="lista"><a class="menu" href="../index.html">Inicio</a></li>
-                <li class="lista"><a class="menu" href="../secciones/Especialista.html">Especialista</a></li>
-                <li class="lista"><a class="menu" href="../secciones/contacto.html">contacto</a></li>
-                <li class="lista"><a class="menu" href="../secciones/quiero-un-turno.html">Quiero un turno</a></li>
-                <li class="lista"><a class="menu" href="../secciones/Servicios.html">Servicios</a></li>
-            </ul>
-        </nav>
-
-        <main>
-<section class="Demanda">
-<h1 class="DEMANDA2">DEMANDA ESPONTÁNEA</h1>
-<p>DEMANDA ESPONTÁNEA; de esta manera, se genera más disponibilidad de turnos para que todos los afiliados que lo necesiten, puedan recibir atención médica en el día. Para esto, es importante identificar algunos de los síntomas que habilitan solicitar un turno para esta modalidad.
-    Dolor de garganta, oído, tos excesiva, fiebre, dolor corporal, dolor de estómago, náuseas, vómitos, diarrea, dolor al orinar, dolor en la zona lumbar, cervical o dorsal, esguinces, desgarros musculares, ronchas, prurito o urticari</p>
-<p>Al consultorio de Demanda Espontánea NO deben asistir pacientes que necesiten:</p>
-<p>Seguimiento o prescripción de recetas para enfermedades crónicas</p>
-<p>Evaluaciones para el ingreso escolar o de actividad física.</p>
-<p>¿Cómo solicitar turno?</p>
-<p>Teniendo en cuenta que los turnos para la demanda espontánea se otorgan por orden de llegada y tiene cupos limitados, solo lo podrá solicitar de forma presencial en Mesa de Turnos.</p>
-<p>Pediatría: lunes a viernes de 10:00 a 18:00 y sábados de 10:00 a 13:00 hs. h</p>
-<!-- COLOCAR IMAGEN -->
-</section>
-
-<section class="laboratorio">
-<h2>LABORATORIO DE ANALISIS CLINICOS- AGUAMARINA</h2>
-<P>Contamos con laboratio de Analisis clinicos-</P>
-<ul>
-<li>HEMATOLOGÍA</li>
-<li>TOXICOLOGÍA</li>
-<li>MICROBIOLOGÍA</li>
-</ul>
-
-<!-- colocar imagen -->
+    <main>
+        <article class="serviciospedtcs">
+            <div class="demanda">
+                <div class="informacion">
+                    <h1>DEMANDA ESPONTÁNEA</h1>
+                    <p>DEMANDA ESPONTÁNEA; de esta manera, se genera más disponibilidad de turnos para que todos los
+                        afiliados
+                        que lo necesiten, puedan recibir atención médica en el día. Para esto, es importante identificar
+                        algunos
+                        de los síntomas que habilitan solicitar un turno para esta modalidad.
+                        Dolor de garganta, oído, tos excesiva, fiebre, dolor corporal, dolor de estómago, náuseas,
+                        vómitos,
+                        diarrea, dolor al orinar, dolor en la zona lumbar, cervical o dorsal, esguinces, desgarros
+                        musculares,
+                        ronchas, prurito o urticari</p>
+                    <p>Al consultorio de Demanda Espontánea NO deben asistir pacientes que necesiten:</p>
+                    <p>Seguimiento o prescripción de recetas para enfermedades crónicas</p>
+                    <p>Evaluaciones para el ingreso escolar o de actividad física.</p>
+                    <p>¿Cómo solicitar turno?</p>
+                    <p>Teniendo en cuenta que los turnos para la demanda espontánea se otorgan por orden de llegada y
+                        tiene
+                        cupos limitados, solo lo podrá solicitar de forma presencial en Mesa de Turnos.</p>
+                    <p>Pediatría: lunes a viernes de 10:00 a 18:00 y sábados de 10:00 a 13:00 hs. h</p>
+                </div>
+                <!-- COLOCAR IMAGEN -->
+                <a class="demanda1">
+                    <img class="img-pediatria"
+                        src="https://www.mutualmedica.com/documents/20123/93572/Curiosidades-sobre-la-Pediatria.jpeg/803e2dd1-2d43-7ca1-812f-1d2c4089788f?t=1669825302031"
+                        alt="imagen pediatria">
+                </a>
+            </div>
 
 
-    
-</section>
+                <div class="laboratorio">
+                <div class="laboratorio-informacion">
+                    <h2>LABORATORIO DE ANALISIS CLINICOS- AGUAMARINA</h2>
+                    <P>Contamos con laboratio de Analisis clinicos- para Niños y Adultos</P>
+                    <p>Nuestro servicio se ocupa del tratamiento de diferentes cuadros clínicos mediante el empleo de
+                        sangre
+                        o
+                        sus derivados como medio terapéutico. Trabajamos bajo estrictas normas de control de calidad
+                        para
+                        asegurar la salud de nuestros pacientes.</p>
+                    <p>Nuestra alianza con Aguamarina Salud nos permite ampliar las prestaciones para nuestros pacientes
+                        en
+                        la
+                        toma de muestras y análisis bioquimicos, que podran realizarse en nuestro consultorio de
+                        PEDIATRICS,
+                        Sarmiento 1375, Comodoro Rivadavia o en Aguamarina Rada Tilly, Calle Olivares 180.
+                    </p>
+               
+                        <div class="section1">
+                            <ul>
+                                <li class="analisis">HEMATOLOGÍA</li>
+                                <li class="analisis">TOXICOLOGÍA</li>
+                                <li class="analisis">MICROBIOLOGÍA</li>
+                                <li class="analisis">Estudios de filiacion</li>
+                                <li class="analisis">Biologia molecular</li>
+                            </ul>
+                        </div>
+                    </div>
 
-        </main>
+                    <!-- colocar imagen -->
+                    <a class="laboratorio3" href="">
+                        <img class="img-laboratorio"
+                            src="https://investigacion-salud.buenosaires.gob.ar/pluginfile.php/80692/course/summary/tubitos-gr%20-%20Curso%20Laboratorio%20Sard%C3%A1.jpg"
+                            alt="imagen laboratio">
+                    </a>
+                </div>
+              
+
+
+
+                <div class="kinesiologia">
+                    <div class="kinesiologia.informacion">
+                        <h3>KINESIOLOGIA</h3>
+                        <p>Especialista en pediatria</p>
+                        <p>kinesiologia respiratorio en paciente pediatrico</p>
+                
+                        <ul>
+                            <li class="tecnica">Tecnicas de hingiene Broncial</li>
+                            <li class="tecnica">Toma de muestras de cultivos de secresiones y virologico</li>
+                            <li class="tecnica">Seguimiento de patologia cronicas respiratoria</li>
+                            <li class="tecnica">Control de ventilacion mecanica tanto invasica como no invasiva</li>
+                        </ul>
+                    </div>
+                    <a href="">
+                        <img class="img-kinesiologia" src="https://anguacurari.com.ar/wp-content/uploads/2021/04/IMG-20210412-WA0053.jpg"
+                            alt="imagen kinesiologia">
+                    </a>
+                </div>
+
+
+                    <div class="diagnóstico">
+                        <div class="Diagnostico1">
+                        <h4>Diagnostico por Imagen</h4>
+                        <p>Realizamos Ecografias. Garantizamos informes confiables para el diagnóstico y tratamiento del
+                            paciente en
+                            un plazo de tiempo adecuado</p>
+                
+                        <ul>
+                            <li class="eco">Ecografias Pediatricas</li>
+                            <li class="eco">Ecografias Ginecologia</li>
+                        </div>
+            
+                         </ul>
+                       <div class="img-eco">
+                        <img class="imgeco1"
+                        src="https://www.mipsalud.com/wp-content/uploads/2022/06/Depositphotos_249177218_S-1.jpg"
+                        alt="img ecografia">
+                        <br>
+                         <img class="imgeco2"
+                        src="https://www.diagnosticorojas.com.ar/wp-content/uploads/2018/07/ecografia-ginecologica-dr-1200x702.jpg"
+                        alt="img ecografia adulto">
+                         </a>
+                        </div>
+                      </div>
+        </article>
+    </main>
+
+    <!-- pie de pagina -->
+<footer class="footer">
+    <div class="logo3">
+      <img class="logoblanco" src="../recursos/img/logo_en_blanco-removebg-preview.png" alt="logo3">
+    </div>
+    <div class="parrafo1">
+      <p>Direccion Sarmiento 664-Comodoro Rivdavia</p>
+    </div>
+    <div class="parrafo2">
+      <i class="fa-brands fa-whatsapp fa-2xs" style="color: #ffffff;"></i>
+    </div>
+    <section class="ubicacion">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11114.242133229227!2d-67.484158!3d-45.860094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde454515c77b65b%3A0x3f2b2fb93038341a!2sSarmiento%20664%2C%20U9000%20Comodoro%20Rivadavia%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1692923872539!5m2!1ses-419!2sar"
+        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </footer>
+  <footer class="footer1">
+    <section class="footer2">
+      <p>© 2023 Pediatrics. Todos los derechos reservados.</p>
+      <p>Diseño web-paola p.</p>
+    </section>
+  
+  </footer>
+</body>
+
+</html>
