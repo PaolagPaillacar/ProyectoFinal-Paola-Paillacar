@@ -137,7 +137,15 @@ footer{
 }
 
 /* Especialista */
-.imagen{
+
+
+
+
+
+.img-especialistas{
+    background: linear-gradient(176deg, #8ac646, #e2ec83);
+}
+.img{
     width: 700px;
 }
 
@@ -193,6 +201,35 @@ footer{
 .conteiner2:hover{
     transform: translate(-5px, -5px);
     background: rgba(206, 231, 19, 0.736);
+}
+
+@media (max-width: 800px){
+    body{
+        padding: 20px;
+    
+    }
+
+    .imag{
+        width: 300px;
+    }
+
+    .container {
+        padding: 10px;
+        grid-template-columns:  1fr;
+        
+       
+    }
+
+    
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ubicacion{
+        padding: 50px;
+        
+    }
 }
 
 
@@ -282,6 +319,27 @@ outline: none;
     text-decoration: none;
 }
 
+@media (max-width: 800px){
+    .formulario{
+        padding: 30px 30px;
+       
+    }
+
+    .form2{
+        flex-direction: column;
+        width: 290px;
+    }
+
+    .contact1{
+        justify-content: start;
+        font-size: 15px;
+    }
+    
+    .contact1 h1{
+        font-size: px;
+    }
+  
+}
 /* Quiero un turno */
 
 .turnos {  
@@ -456,3 +514,4 @@ flex-direction: column;
     border-radius: 20px;
 }
 
+}
