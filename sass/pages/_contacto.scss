@@ -80,24 +80,25 @@ main {
 
 
 
-@media (max-width: 800px) {
+    @media (max-width: 800px) {
 
-    .formulario {
-        padding: 30px 30px;
-        .form2 {
-            flex-direction: column;
-            width: 290px;
+        .formulario {
+            padding: 30px 30px;
+
+            .form2 {
+                flex-direction: column;
+                width: 290px;
+            }
         }
-    }
 
-    .contact1 {
-        justify-content: start;
-        font-size: 15px;
+        .contact1 {
+            justify-content: start;
+            font-size: 15px;
 
-        .contact1 h1 {
-            font-size: 25px;
+            .contact1 h1 {
+                font-size: 25px;
+            }
         }
-    }
 
-}
+    }
 }

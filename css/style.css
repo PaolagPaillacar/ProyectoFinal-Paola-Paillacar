@@ -1,9 +1,14 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Quicksand:wght@400;500;700&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,500&display=swap");
 * {
   margin: 0px;
   padding: 0px;
 }
 
+@font-face {
+  font-family: "nunito";
+  src: url("../recursos/fonts/Nunito-SemiBoldItalic.ttf");
+}
 .logo2 {
   width: 150px;
 }
@@ -24,10 +29,10 @@ header .carousel-item img {
 main .img-especialistas {
   background: linear-gradient(176deg, #8ac646, #e2ec83);
 }
-main .img {
+main .img-especialistas .img {
   width: 700px;
 }
-main .Especialist {
+main .img-especialistas .Especialist {
   font-family: "nunito";
   font-weight: 50px;
   color: rgb(248, 248, 248);
@@ -35,7 +40,7 @@ main .Especialist {
   text-align: center;
   display: inline;
 }
-main .varios {
+main .img-especialistas .varios {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   color: green;
@@ -54,7 +59,7 @@ main .container {
   gap: 40px;
   justify-content: center;
 }
-main .conteiner2 {
+main .container .conteiner2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +70,7 @@ main .conteiner2 {
   border-radius: 20px;
   height: 60px;
 }
-main .conteiner2:hover {
+main .container .conteiner2:hover {
   transform: translate(-5px, -5px);
   background: rgba(206, 231, 19, 0.736);
 }
@@ -79,13 +84,6 @@ main .conteiner2:hover {
   main .container {
     padding: 10px;
     grid-template-columns: 1fr;
-  }
-  main footer {
-    flex-direction: column;
-    text-align: center;
-  }
-  main .ubicacion {
-    padding: 50px;
   }
 }
 
@@ -234,17 +232,25 @@ main .turnoswhatsapp {
   border-radius: 30px;
   padding: 20px;
 }
-main .btn {
-  margin-left: 20px;
-  margin-top: 20px;
-}
-main fa-brands fa-whatsapp {
+main .turnoswhatsapp fa-brands fa-whatsapp {
   width: 30px;
   color: #097714;
   margin-left: 20px;
 }
+main .btn {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+@media (max-width: 800px) {
+  main .turnos {
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-.demanda {
+main .demanda {
   padding: 100px;
   display: grid;
   justify-content: space-around;
@@ -252,14 +258,12 @@ main fa-brands fa-whatsapp {
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
 }
-
-.img-pediatria {
+main .demanda .img-pediatria {
   width: 100%;
   height: auto;
   border-radius: 30px;
 }
-
-.laboratorio {
+main .laboratorio {
   padding: 100px;
   display: grid;
   justify-content: space-around;
@@ -267,14 +271,12 @@ main fa-brands fa-whatsapp {
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
 }
-
-.img-laboratorio {
+main .laboratorio .img-laboratorio {
   width: 100%;
   height: auto;
   border-radius: 30px;
 }
-
-.kinesiologia {
+main .kinesiologia {
   padding: 100px;
   display: grid;
   justify-content: space-around;
@@ -282,14 +284,12 @@ main fa-brands fa-whatsapp {
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
 }
-
-.img-kinesiologia {
+main .kinesiologia .img-kinesiologia {
   width: 100%;
   height: auto;
   border-radius: 30px;
 }
-
-.diagnóstico {
+main .diagnóstico {
   padding: 100px;
   display: grid;
   justify-content: space-around;
@@ -297,23 +297,42 @@ main fa-brands fa-whatsapp {
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
 }
-
-.imgeco1 {
+main .diagnóstico .imgeco1 {
   width: 100%;
   border-radius: 20px;
 }
-
-.img-eco {
+main .diagnóstico .img-eco {
   display: flex;
   flex-direction: column;
 }
-
-.imgeco2 {
+main .diagnóstico .imgeco2 {
   width: 100%;
   border-radius: 20px;
 }
+@media (max-width: 800px) {
+  main .demanda {
+    display: flex;
+    flex-direction: column;
+  }
+  main .laboratorio {
+    display: flex;
+    flex-direction: column;
+  }
+  main .kinesiologia {
+    display: flex;
+    flex-direction: column;
+  }
+  main .kinesiologia {
+    display: flex;
+    flex-direction: column;
+  }
+  main .diagnóstico {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-.demanda {
+main .demanda {
   padding: 100px;
   display: grid;
   justify-content: space-around;
@@ -321,14 +340,12 @@ main fa-brands fa-whatsapp {
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
 }
-
-.img-pediatria {
+main .demanda .img-pediatria {
   width: 100%;
   height: auto;
   border-radius: 30px;
 }
-
-.laboratorio {
+main .laboratorio {
   padding: 100px;
   display: grid;
   justify-content: space-around;
@@ -336,14 +353,12 @@ main fa-brands fa-whatsapp {
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
 }
-
-.img-laboratorio {
+main .laboratorio .img-laboratorio {
   width: 100%;
   height: auto;
   border-radius: 30px;
 }
-
-.kinesiologia {
+main .kinesiologia {
   padding: 100px;
   display: grid;
   justify-content: space-around;
@@ -351,14 +366,12 @@ main fa-brands fa-whatsapp {
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
 }
-
-.img-kinesiologia {
+main .kinesiologia .img-kinesiologia {
   width: 100%;
   height: auto;
   border-radius: 30px;
 }
-
-.diagnóstico {
+main .diagnóstico {
   padding: 100px;
   display: grid;
   justify-content: space-around;
@@ -366,20 +379,39 @@ main fa-brands fa-whatsapp {
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
 }
-
-.imgeco1 {
+main .diagnóstico .imgeco1 {
   width: 100%;
   border-radius: 20px;
 }
-
-.img-eco {
+main .diagnóstico .img-eco {
   display: flex;
   flex-direction: column;
 }
-
-.imgeco2 {
+main .diagnóstico .imgeco2 {
   width: 100%;
   border-radius: 20px;
+}
+@media (max-width: 800px) {
+  main .demanda {
+    display: flex;
+    flex-direction: column;
+  }
+  main .laboratorio {
+    display: flex;
+    flex-direction: column;
+  }
+  main .kinesiologia {
+    display: flex;
+    flex-direction: column;
+  }
+  main .kinesiologia {
+    display: flex;
+    flex-direction: column;
+  }
+  main .diagnóstico {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 footer {
