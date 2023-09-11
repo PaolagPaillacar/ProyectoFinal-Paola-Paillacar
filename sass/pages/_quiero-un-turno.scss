@@ -1,0 +1,92 @@
+main { 
+.turnos {  
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
+    border-style: inset;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Iturnos turnoseco tgeblix"
+      "docturnos turnoswhatsapp .";
+  }
+  
+  .Iturnos { grid-area: Iturnos; }
+  
+  .turnoseco { grid-area: turnoseco; }
+  
+  .docturnos { grid-area: docturnos; }
+  
+  .turnoswhatsapp { grid-area: turnoswhatsapp; }
+  
+  .tgeblix { grid-area: tgeblix; }
+  
+
+
+  
+.iturnos{
+    color: #f2e8cf;
+    justify-content: center;
+    padding: 20px;
+    background-color: #7ecc35;
+    border-style: groove;
+    border-radius: 30px;
+
+
+}  
+.parrafot1{
+    display: grid;
+} 
+
+
+.turnoseco{
+    color: #f2e8cf;
+    background-color: #7ecc35;
+    border-style: groove;
+    border-radius: 30px;
+    padding: 20px;
+
+}
+
+.tgeblix{
+    margin-left: 20px;
+    color: #f2e8cf ;
+    background-color:  #7ecc35;
+    border-style: groove;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.docturnos{
+    color: #f2e8cf ;
+    background-color: #7ecc35;
+    border-style: groove;
+    border-radius: 30px;
+    padding: 20px;
+
+}
+
+.turnoswhatsapp{
+    color: #f2e8cf ;
+    padding: 10px;
+    background-color: #7ecc35;
+    border-style: groove;
+    border-radius: 30px;
+    padding: 20px;
+
+}
+
+.btn {
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+fa-brands fa-whatsapp{
+width: 30px;
+    color: #097714;
+    margin-left: 20px;
+}
+
+}

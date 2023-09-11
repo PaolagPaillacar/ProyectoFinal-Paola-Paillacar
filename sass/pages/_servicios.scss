@@ -1,0 +1,81 @@
+
+.demanda{
+    padding: 100px;
+    display: grid;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: solid 2px #918989;
+    grid-template-columns: 40% 40%; 
+}
+
+
+
+
+.img-pediatria {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.laboratorio {
+    padding: 100px;
+    display: grid;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: solid 2px #918989;
+    grid-template-columns: 40% 40%; 
+   
+
+   
+}
+
+.img-laboratorio{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+
+}
+
+.kinesiologia{
+    padding: 100px;
+    display: grid;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: solid 2px #918989;
+    grid-template-columns: 40% 40%; 
+  
+   
+}
+
+.img-kinesiologia{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.diagnóstico{
+    padding: 100px;
+    display: grid;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: solid 2px #918989;
+    grid-template-columns: 40% 40%; 
+
+}
+
+.imgeco1{
+width: 100%;
+border-radius: 20px;
+}
+
+.img-eco{
+display: flex;
+flex-direction: column;
+
+}
+
+.imgeco2{
+    width: 100%;
+    border-radius: 20px;
+}
+

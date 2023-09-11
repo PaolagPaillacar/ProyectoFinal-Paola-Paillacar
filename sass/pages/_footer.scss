@@ -1,0 +1,44 @@
+footer {
+    background-color: rgb(121, 204, 20);
+    display: flex;
+    justify-content: space-evenly;
+
+    .logoblanco {
+        width: 150px;
+        padding: 20px;
+    }
+
+    .parrafo1 {
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .ubicacion {
+        width: 20px;
+    }
+
+}
+
+.footer1 {
+    background-color: black;
+    color: white;
+    height: 75px;
+    text-align: center;
+
+
+}
+
+@media (max-width: 800px) {
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .ubicacion {
+        padding: 50px;
+      }
+}
