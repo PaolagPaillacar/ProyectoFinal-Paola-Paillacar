@@ -65,7 +65,7 @@
 
 @media (max-width: 800px) {
   .Seccion1 {
-    width: 35rem;
+    width: 23rem;
     height: 33rem;
     display: flex;
     flex-direction: column;
