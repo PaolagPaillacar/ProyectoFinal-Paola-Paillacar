@@ -1,9 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="consultorios, pediatria,clinica, atencion,familia">
+  <meta name="descripcion" content="Consutorios para atencion a toda la familia">
   <link rel="stylesheet" href="./css/style.css">
   <title>Pediatrics- html</title>
 
@@ -14,8 +16,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <!-- logo -->
-      <a class="navbar-brand p-0 d-flex flex-row align-items-center justify-content-center flex-wrap"
-        href="./index.html">
+      <a class="navbar-brand p-0 d-flex flex-row align-items-center justify-content-center" href="./index.html">
         <img width="150" src="./recursos/img/logo-pediatrics-removebg-preview.png" alt="Logo">
       </a>
       <!-- boton hamburgesa -->
@@ -24,7 +25,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- nav+ search -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="d-flex justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-">
           <li class="nav-item ">
             <a class="nav-link active" aria-current="inicio" href="./index.html">INICIO</a>
@@ -42,7 +43,6 @@
             <a class="nav-link fst-normal active" href="./secciones/Servicios.html">SERVICIOS</a>
           </li>
         </ul>
-        <!-- buscador -->
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
@@ -50,77 +50,105 @@
       </div>
     </div>
   </nav>
-  <header>
-    <div id="carouselExample" class="carousel slide">
+  <!-- Carrousel de imagenel  -->
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./recursos/img/img2.png" class="img-fluid max-width: w-100: auto " alt="pediatrics1">
+          <img src="./recursos/img/img1.jpeg" class="d-block w-100" alt="imagen pediatrics sala principal">
         </div>
         <div class="carousel-item">
-          <img src="./recursos/img/img1.png" class="" alt="pediatrics2">
+          <img src="./recursos/img/img2.jpeg" class="d-block w-100" alt="imagen pediatrics sala de espera">
         </div>
         <div class="carousel-item">
-          <img src="./recursos/img/img3.png" class=" alt=" pediatrics3">
+          <img src="./recursos/img/img3.jpeg" class="d-block w-100" alt="imagen pediatrics sala de espera">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </header>
-  <main>
+    <!-- Horarios -->
+    <div class="Seccion1">
+      <div class="Direccion1">
+        <div class="location">
+        <i class="fa-solid fa-location-dot fa-2xl" style="color: #cd922d;"></i>
+      </div>
+      <div class="texto1">
+        <p>Sarimiento 664- Comodoro Rivadavia </p>
+      </div>
+      </div>
+      <div class="Direccion2">
+        <i class="fa-regular fa-clock fa-2xl" style="color: #c46d27;"></i>
+        <p>Horario de Atencion</p>
+        <p> Lunes a Viernes de 8:00 a 20:00 hs. Y sabado de 9:00 a 13:00 hs.</p>
+      </div>
+      <div class="Direccion3">
+        <i class="fa-solid fa-phone fa-2xl" style="color: #cb802a;"></i>
+        <div class="telefono">
+        <p>Contacto</p>
+        <p>Tel: 4440398</p>
+        <p>Whatsapp 2974087154</p>
+        <p>Email: comodoro_consultiorios_pediatrics@hotmail.com</p>
+      </div>
+      </div>
+    </div>
+
+    <!-- 1 carta -->
+    <div class="carta">
+    <section class=" row justify-content-center justify justify-content-md-evenly m-20px">
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://png.pngtree.com/thumb_back/fw800/background/20210827/pngtree-doctor-holding-stethoscope-in-hand-against-white-background-image_764536.jpg"
+          class=" rounded card-img-top mx-auto p-2" alt="imagen doctor">
+        <div class="card-body">
+          <h5 class="card-title">Turnos</h5>
+          <p class="card-text">Solicite su turno para Especialista</p>
+          <a href="./secciones/quiero-un-turno.html" class="btn btn-primary d-flex justify-content-center">Sacar un
+            turno</a>
+        </div>
+      </div>
+
+      <!-- 2 carta -->
+      <div class="card" style="width: 18rem;">
+        <img
+          src="https://us.123rf.com/450wm/lenetsnikolai/lenetsnikolai2001/lenetsnikolai200100754/139185507-retrato-de-un-grupo-de-trabajadores-m%C3%A9dicos-en-el-hospital.jpg?ver=6"
+          class="card-img-top mx-auto p-2" alt="imagen especilaista">
+        <div class="card-body">
+          <h5 class="card-title">Cartilla Medica</h5>
+          <p class="card-text">Contamos con un amplio equipo de profesionales para antender sus consultas| </p>
+          <a href="./secciones/Especialista.html" class="btn btn-primary d-flex justify-content-center">Ver mas</a>
+        </div>
+      </div>
+      <!-- carta3 -->
+      <div class="card" style="width: 18rem;">
+        <img src="https://img.europapress.es/fotoweb/fotonoticia_20221129142945_420.jpg"
+          class="card-img-top mx-auto p-2" alt="imagen sevicios">
+        <div class="card-body">
+          <h5 class="card-title">Servicios</h5>
+          <p class="card-text"></p>
+          <a href="./secciones/Servicios.html" class="btn btn-primary d-flex justify-content-center">Ver mas</a>
+        </div>
+      </div>
+      </div>
+    </div>
+    </section>
   </main>
-  <!-- 1 carta -->
-  <section class="container row justify-content-center m-auto ">
-    <div class="card" style="width: 18rem;">
-      <img
-        src="https://png.pngtree.com/thumb_back/fw800/background/20210827/pngtree-doctor-holding-stethoscope-in-hand-against-white-background-image_764536.jpg"
-        class="card-img-top" alt="imagen doctor">
-      <div class="card-body">
-        <h5 class="card-title">Turnos</h5>
-        <p class="card-text">Solicite su turno para Especialista</p>
-        <a href="./secciones/quiero-un-turno.html" class="btn btn-primary">Sacar un turno</a>
-      </div>
-    </div>
-
-    <!-- 2 carta -->
-    <div class="card" style="width: 18rem;">
-      <img
-        src="https://us.123rf.com/450wm/lenetsnikolai/lenetsnikolai2001/lenetsnikolai200100754/139185507-retrato-de-un-grupo-de-trabajadores-m%C3%A9dicos-en-el-hospital.jpg?ver=6"
-        class="card-img-top" alt="imagen especilaista">
-      <div class="card-body">
-        <h5 class="card-title">Cartilla Medica</h5>
-        <p class="card-text"></p>
-        <a href="./secciones/Especialista.html" class="btn btn-primary">Ver mas</a>
-      </div>
-    </div>
-    <!-- carta3 -->
-    <div class="card" style="width: 18rem;">
-      <img src="https://img.europapress.es/fotoweb/fotonoticia_20221129142945_420.jpg" class="card-img-top"
-        alt="imagen sevicios">
-      <div class="card-body">
-        <h5 class="card-title">Servicios</h5>
-        <p class="card-text"></p>
-        <a href="./secciones/Servicios.html" class="btn btn-primary">Ver mas</a>
-      </div>
-    </div>
-  </div>
-  </section>
-  </main>
-
-  
-</body>
-
-</html>
-
-
-
-
 
 <!-- pie de pagina -->
 <footer class="footer">
@@ -147,7 +175,9 @@
   </section>
 
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8f5c9daf85.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+
+.logo2 {
+    width: 150px;
+
+}
+
+.navbar {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+
+    li {
+        &:hover {
+            border-radius: 15px;
+            transform: translate(-5px, -5px);
+            background: rgba(65, 231, 19, 0.218);
+        }
+    }
+}
