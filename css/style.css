@@ -16,8 +16,9 @@
 }
 
 .Seccion1 {
+  font-size: 400;
   color: rgba(128, 128, 128, 0.811);
-  background-color: rgb(200, 230, 94);
+  background-color: #c8e65e;
   padding: 2rem;
   height: 320px;
   backdrop-filter: blur(10px);
@@ -34,12 +35,18 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+.Direccion1:hover {
+  transform: translate(-20px, -40px);
+}
 
 .Direccion2 {
   width: 246px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+.Direccion2:hover {
+  transform: translate(-20px, -40px);
 }
 
 .Direccion3 {
@@ -48,11 +55,34 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+.Direccion3:hover {
+  transform: translate(-20px, -40px);
+}
 
 .carta {
   margin: 20px;
 }
 
+@media (max-width: 800px) {
+  .Seccion1 {
+    width: 35rem;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Seccion1 .Direccion1 {
+    height: 10rem;
+  }
+  .Seccion1 .Direccion2 {
+    height: 12rem;
+  }
+  .Seccion1 .Direccion3 {
+    height: 16rem;
+    width: 37rem;
+  }
+}
 .logo2 {
   width: 150px;
 }
@@ -457,7 +487,7 @@ main .diagnóstico .imgeco2 {
 }
 
 footer {
-  background-color: rgb(121, 204, 20);
+  background-color: #79cc14;
   display: flex;
   justify-content: space-evenly;
 }
