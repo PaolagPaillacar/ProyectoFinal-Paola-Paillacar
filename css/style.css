@@ -123,26 +123,17 @@ main .carta {
   background: rgba(65, 231, 19, 0.218);
 }
 
-main .img-especialistas {
-  background: linear-gradient(176deg, #8ac646, #e2ec83);
-}
 main .img-especialistas .img {
-  width: 700px;
-}
-main .img-especialistas .Especialist {
-  font-family: "nunito";
-  font-weight: 50px;
-  color: rgb(248, 248, 248);
-  background-color: rgba(187, 195, 28, 0.66);
-  text-align: center;
-  display: inline;
-}
-main .img-especialistas .varios {
+  color: white;
   font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  color: green;
-  background-color: rgba(153, 205, 50, 0.692);
-  text-align: center;
+  width: 100rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, rgba(50, 177, 36, 0.5), rgba(137, 218, 74, 0.5)), url(/recursos/img/especialista.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 main .container {
   list-style-type: none;
