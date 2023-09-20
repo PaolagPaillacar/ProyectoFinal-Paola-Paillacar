@@ -1,27 +1,23 @@
 main {
-    .img-especialistas {
-
-        // background: linear-gradient(176deg, #8ac646, #e2ec83);
+    .especialistas {
+        //background: linear-gradient(176deg, #8ac646, #e2ec83);
         .img {
             color: white;
-            font-family: "PT Sans", sans-serif;
             width: 100rem;
-            height: 20rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(to right, rgba(50, 177, 36, 0.5), rgba(137, 218, 74, 0.5)), url(/recursos/img/especialista.jpeg);
-            background-size: cover;
-            background-position: center;
-
+                height: 20rem;
+                background: linear-gradient(to right, rgba(32, 144, 54, 0.595), rgba(89, 153, 47, 0.5)), url(../recursos/img/especialista.jpeg);
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+       
         }
-
-    }
-
-    .container {
+        .container {
         list-style-type: none;
         font-family: "PT Sans", sans-serif;
-        font-weight: 400;
+        font-weight: 700;
         padding: 30px;
         text-align: center;
         text-decoration: none;
@@ -40,14 +36,15 @@ main {
             border-color: rgb(102, 206, 76);
             border-radius: 20px;
             height: 60px;
-
+            position: relative;
+            cursor: pointer;
 
             &:hover {
                 transform: translate(-5px, -5px);
                 background: rgba(206, 231, 19, 0.736);
             }
 
-
+            
         }
 
     }
@@ -61,8 +58,9 @@ main {
 
         }
 
-        .img {
-            width: 30rem;
+        .img{
+            margin-left: -42rem;
+            
         }
 
         .container {

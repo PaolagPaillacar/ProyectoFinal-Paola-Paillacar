@@ -9,6 +9,9 @@
   font-family: "nunito";
   src: url("../recursos/fonts/Nunito-SemiBoldItalic.ttf");
 }
+main .navbar {
+  background-color: #5fad56;
+}
 main .carousel-inner {
   width: 98%;
   padding: 18px;
@@ -123,22 +126,21 @@ main .carta {
   background: rgba(65, 231, 19, 0.218);
 }
 
-main .img-especialistas .img {
+main .especialistas .img {
   color: white;
-  font-family: "PT Sans", sans-serif;
   width: 100rem;
   height: 20rem;
+  background: linear-gradient(to right, rgba(32, 144, 54, 0.595), rgba(89, 153, 47, 0.5)), url(../recursos/img/especialista.jpeg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, rgba(50, 177, 36, 0.5), rgba(137, 218, 74, 0.5)), url(/recursos/img/especialista.jpeg);
-  background-size: cover;
-  background-position: center;
 }
 main .container {
   list-style-type: none;
   font-family: "PT Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   padding: 30px;
   text-align: center;
   text-decoration: none;
@@ -157,6 +159,8 @@ main .container .conteiner2 {
   border-color: rgb(102, 206, 76);
   border-radius: 20px;
   height: 60px;
+  position: relative;
+  cursor: pointer;
 }
 main .container .conteiner2:hover {
   transform: translate(-5px, -5px);
@@ -167,7 +171,7 @@ main .container .conteiner2:hover {
     padding: 20px;
   }
   main .img {
-    width: 30rem;
+    margin-left: -42rem;
   }
   main .container {
     padding: 10px;
@@ -508,12 +512,16 @@ footer {
   justify-content: space-evenly;
 }
 footer .logoblanco {
-  width: 150px;
+  width: 200px;
   padding: 20px;
 }
-footer .parrafo1 {
+footer .logo3 {
+  display: flex;
+}
+footer .f-enlaces a {
   color: white;
-  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -533,6 +541,11 @@ footer .ubicacion {
   footer {
     flex-direction: column;
     text-align: center;
+  }
+  .logo3 {
+    padding: 30px;
+    flex-direction: column;
+    text-align: left;
   }
   .ubicacion {
     padding: 50px;

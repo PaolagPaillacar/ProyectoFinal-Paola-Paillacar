@@ -4,16 +4,23 @@ footer {
     justify-content: space-evenly;
 
     .logoblanco {
-        width: 150px;
+        width: 200px;
         padding: 20px;
     }
 
-    .parrafo1 {
+    .logo3{
+        display: flex;
+    
+    }
+    .f-enlaces{
+        a{
         color: white;
-        text-align: center;
+        text-decoration: none;
+    padding-top: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        }
     }
 
     .ubicacion {
@@ -37,7 +44,12 @@ footer {
         flex-direction: column;
         text-align: center;
       }
-    
+    .logo3{
+        padding: 30px;
+        flex-direction: column;
+        text-align: left;
+        
+    }
       .ubicacion {
         padding: 50px;
       }
