@@ -86,6 +86,11 @@ main .carta .card {
     height: 10rem;
     width: 20rem;
   }
+  main .carta {
+    margin: 100px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .logo2 {
@@ -149,12 +154,12 @@ main .container .conteiner2:hover {
 @media (max-width: 800px) {
   main body {
     padding: 20px;
+    padding-top: 32px;
   }
   main .img {
-    width: -12px;
-    min-height: 10px;
-    min-width: 20px;
-    text-align: end;
+    padding-top: 32px;
+    padding-left: 40px;
+    max-width: 436px;
   }
   main .container {
     padding: 10px;
@@ -230,7 +235,7 @@ main .form-txt .form-txt a {
   }
   main .formulario .form2 {
     flex-direction: column;
-    width: 290px;
+    width: 364px;
   }
   main .contact1 {
     justify-content: start;
@@ -353,8 +358,9 @@ main .btn {
 }
 @media (max-width: 800px) {
   main .container-title {
-    min-height: 10px;
-    min-width: 20px;
+    padding-top: 32px;
+    padding-left: 40px;
+    max-width: 436px;
   }
   main .turnos {
     margin: 20px;
@@ -370,7 +376,7 @@ main .demanda {
   padding: 100px;
   display: grid;
   justify-content: space-around;
-  width: 100%;
+  width: 100rem;
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
 }
@@ -386,6 +392,9 @@ main .laboratorio {
   width: 100%;
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
+}
+main .laboratorio ul {
+  list-style: none;
 }
 main .laboratorio .img-laboratorio {
   width: 100%;
@@ -427,12 +436,16 @@ main .diagnóstico .imgeco2 {
 }
 @media (max-width: 800px) {
   main .demanda {
+    width: 40rem;
     display: flex;
     flex-direction: column;
   }
   main .laboratorio {
     display: flex;
     flex-direction: column;
+  }
+  main .laboratorio ul {
+    list-style: none;
   }
   main .kinesiologia {
     display: flex;
@@ -452,7 +465,7 @@ main .demanda {
   padding: 100px;
   display: grid;
   justify-content: space-around;
-  width: 100%;
+  width: 100rem;
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
 }
@@ -468,6 +481,9 @@ main .laboratorio {
   width: 100%;
   border-bottom: solid 2px #918989;
   grid-template-columns: 40% 40%;
+}
+main .laboratorio ul {
+  list-style: none;
 }
 main .laboratorio .img-laboratorio {
   width: 100%;
@@ -509,12 +525,16 @@ main .diagnóstico .imgeco2 {
 }
 @media (max-width: 800px) {
   main .demanda {
+    width: 40rem;
     display: flex;
     flex-direction: column;
   }
   main .laboratorio {
     display: flex;
     flex-direction: column;
+  }
+  main .laboratorio ul {
+    list-style: none;
   }
   main .kinesiologia {
     display: flex;
