@@ -1,86 +1,54 @@
 main {
-    .navbar{
-        background-color:#5fad56 ;
+
+    .container-fluid{
+        background-color:#30d51e ;
     }
     .carousel-inner {
         width: 98%;
         padding: 18px;
-        margin: 10px
+        margin: 10px;
     }
 
     .Seccion1 {
         font-size: $PTSans;
-        color: rgb(220, 89, 23);
-        background-color: #c8e65e;
-        padding: 2rem;
-        height: 320px;
-        backdrop-filter: blur(10px);
-        box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
         text-align: center;
-        position: relative;
-        transition: all 0.2s ease-in-out;
         display: flex;
-        justify-content: space-around;
-    }
-
-    .Direccion1 {
-        background: rgba(255, 255, 255, 0.659);
-        opacity: 0.7;
-        border-radius: 5px;
-        border: solid;
-        border-color: rgba(255, 255, 255, 0.659);
-        display: flex;
-        flex-direction: column;
         justify-content: space-evenly;
 
-
-        &:hover {
-            transform: translate(-20px, -40px);
-        }
-
-    }
-
-
-    .Direccion2 {
-        background: rgba(255, 255, 255, 0.659);
-        opacity: 0.7;
-        border-radius: 5px;
-        border: solid;
-        border-color: rgba(255, 255, 255, 0.659);
-        width: 246px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-        &:hover {
-            transform: translate(-20px, -40px);
-        }
-    }
-
-    .Direccion3 {
-        background: rgba(255, 255, 255, 0.659);
-        opacity: 0.7;
-        border-radius: 5px;
-        border: solid;
-        border-color: rgba(255, 255, 255, 0.659);
-        width: 315px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-        i {
-            padding: 10px;
-        }
-
-        &:hover {
-            transform: translate(-20px, -40px);
-        }
-
+       .Direccion1 {
+        color: white;
+        background-color: #7ac74f;
+        width: 50rem;
+        height: 12rem;
+        padding: 2rem;
+        
+        
+       }
+       .Direccion2{
+        color: white;
+        background-color: #a1cf6b;
+        width: 50rem;
+        height: 12rem;
+        padding: 2rem;
+       }
+       .Direccion3{
+        color: white;
+        background-color: #cbb32bed;
+        width: 50rem;
+        height: 12rem;
+        padding: 2rem;
+       }
     }
 
 
     .carta {
-        margin: 20px;
+        padding: 100px;
+        .card{
+         border-radius: 14px;
+         box-shadow: 20px 20px 20px rgb(0, 0, 0, 0.5);
+         background: rgba(238, 234, 234, 0.174)
+        }
+
     }
 
     @media (max-width: 800px) {

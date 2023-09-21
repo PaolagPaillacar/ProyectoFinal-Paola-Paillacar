@@ -9,8 +9,8 @@
   font-family: "nunito";
   src: url("../recursos/fonts/Nunito-SemiBoldItalic.ttf");
 }
-main .navbar {
-  background-color: #5fad56;
+main .container-fluid, main .container-xxl, main .container-xl, main .container-lg, main .container-md, main .container-sm {
+  background-color: #30d51e;
 }
 main .carousel-inner {
   width: 98%;
@@ -19,64 +19,38 @@ main .carousel-inner {
 }
 main .Seccion1 {
   font-size: 400;
-  color: rgb(220, 89, 23);
-  background-color: #c8e65e;
-  padding: 2rem;
-  height: 320px;
-  backdrop-filter: blur(10px);
-  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
   text-align: center;
-  position: relative;
-  transition: all 0.2s ease-in-out;
   display: flex;
-  justify-content: space-around;
-}
-main .Direccion1 {
-  background: rgba(255, 255, 255, 0.659);
-  opacity: 0.7;
-  border-radius: 5px;
-  border: solid;
-  border-color: rgba(255, 255, 255, 0.659);
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
 }
-main .Direccion1:hover {
-  transform: translate(-20px, -40px);
+main .Seccion1 .Direccion1 {
+  color: white;
+  background-color: #7ac74f;
+  width: 50rem;
+  height: 12rem;
+  padding: 2rem;
 }
-main .Direccion2 {
-  background: rgba(255, 255, 255, 0.659);
-  opacity: 0.7;
-  border-radius: 5px;
-  border: solid;
-  border-color: rgba(255, 255, 255, 0.659);
-  width: 246px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+main .Seccion1 .Direccion2 {
+  color: white;
+  background-color: #a1cf6b;
+  width: 50rem;
+  height: 12rem;
+  padding: 2rem;
 }
-main .Direccion2:hover {
-  transform: translate(-20px, -40px);
-}
-main .Direccion3 {
-  background: rgba(255, 255, 255, 0.659);
-  opacity: 0.7;
-  border-radius: 5px;
-  border: solid;
-  border-color: rgba(255, 255, 255, 0.659);
-  width: 315px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-main .Direccion3 i {
-  padding: 10px;
-}
-main .Direccion3:hover {
-  transform: translate(-20px, -40px);
+main .Seccion1 .Direccion3 {
+  color: white;
+  background-color: rgba(203, 179, 43, 0.9294117647);
+  width: 50rem;
+  height: 12rem;
+  padding: 2rem;
 }
 main .carta {
-  margin: 20px;
+  padding: 100px;
+}
+main .carta .card {
+  border-radius: 14px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  background: rgba(238, 234, 234, 0.174);
 }
 @media (max-width: 800px) {
   main body {
@@ -260,12 +234,14 @@ main .form-txt .form-txt a {
 
 main .turnos {
   padding: 100px;
+  background: linear-gradient(136deg, #8ac646, #e2ec83);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 30px 30px;
   border-style: inset;
   grid-auto-flow: row;
+  box-shadow: 20px 20px 20px rgba(207, 206, 206, 0.5);
   grid-template-areas: "Iturnos turnoseco tgeblix" "docturnos turnoswhatsapp .";
 }
 main .Iturnos {
@@ -284,45 +260,62 @@ main .tgeblix {
   grid-area: tgeblix;
 }
 main .iturnos {
-  color: #f2e8cf;
+  color: #32c415;
+  width: 100%;
+  margin: 20px;
   justify-content: center;
   padding: 20px;
-  background-color: #7ecc35;
-  border-style: groove;
-  border-radius: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: space-around;
+  box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
 }
 main .parrafot1 {
   display: grid;
 }
 main .turnoseco {
-  color: #f2e8cf;
-  background-color: #7ecc35;
-  border-style: groove;
-  border-radius: 30px;
+  color: #32c415;
+  width: 100%;
+  margin: 20px;
+  justify-content: center;
   padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: space-around;
+  box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
 }
 main .tgeblix {
-  margin-left: 20px;
-  color: #f2e8cf;
-  background-color: #7ecc35;
-  border-style: groove;
-  border-radius: 30px;
+  color: #32c415;
+  width: 100%;
+  margin: 20px;
+  justify-content: center;
   padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  justify-content: space-around;
+  box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
 }
 main .docturnos {
-  color: #f2e8cf;
-  background-color: #7ecc35;
-  border-style: groove;
-  border-radius: 30px;
+  color: #32c415;
+  width: 100%;
+  margin: 20px;
+  justify-content: center;
   padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: space-around;
+  box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
 }
 main .turnoswhatsapp {
-  color: #f2e8cf;
-  padding: 10px;
-  background-color: #7ecc35;
-  border-style: groove;
-  border-radius: 30px;
+  color: #32c415;
+  width: 100%;
+  margin: 20px;
+  justify-content: center;
   padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: space-around;
+  box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
 }
 main .turnoswhatsapp fa-brands fa-whatsapp {
   width: 30px;
@@ -335,6 +328,7 @@ main .btn {
 }
 @media (max-width: 800px) {
   main .turnos {
+    margin: -12px;
     padding: 20px;
     width: 400px;
     display: flex;
