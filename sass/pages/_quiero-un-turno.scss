@@ -1,14 +1,32 @@
 main {
+    .container-title{
+        color: white;
+        width: 100rem;
+        height: 20rem;
+        background: linear-gradient(to right, rgba(32, 144, 54, 0.595), rgba(89, 153, 47, 0.5)), url(../recursos/img/turnos.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        text-align: center;
+        justify-content: center;
+        .title{
+            padding: 30px;
+            justify-content: center;
+        }
+    }
+
     .turnos {
         padding: 100px;
-        background:linear-gradient(136deg, #8ac646, #e2ec83) ;
+        background: white;
+        box-shadow: 20px 20px 20px rgba(26, 26, 26, 0.5);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 30px 30px;
         border-style: inset;
         grid-auto-flow: row;
-        box-shadow: 20px 20px 20px rgba(207, 206, 206, 0.5);
+        
         grid-template-areas:
             "Iturnos turnoseco tgeblix"
             "docturnos turnoswhatsapp .";
@@ -121,13 +139,18 @@ main {
     }
 
     @media (max-width: 800px) {
+        .container-title{
+            min-height: 10px;
+           min-width: 20px;
+        }       
+
         .turnos {
-            margin: -12px;
+            margin: 20px;
             padding: 20px;
             width: 400px;
             display: flex;
             flex-direction: column;
-            
+            justify-content: space-around;
                
         
         }

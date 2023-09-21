@@ -7,7 +7,10 @@ main {
                 height: 20rem;
                 background: linear-gradient(to right, rgba(32, 144, 54, 0.595), rgba(89, 153, 47, 0.5)), url(../recursos/img/especialista.jpeg);
                 background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
                 background-position: center;
+                position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -59,7 +62,11 @@ main {
         }
 
         .img{
-            margin-left: -42rem;
+            width: -12px;
+           min-height: 10px;
+           min-width: 20px;
+           text-align: end;
+            
             
         }
 
