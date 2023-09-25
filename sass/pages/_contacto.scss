@@ -33,48 +33,50 @@ main {
             width: 300px;
             margin: 0 0 30px;
 
+            .contact1 h1 {
+                font-size: 35px;
+                color: rgba(92, 88, 88, 0.827);
+            }
         }
-    }
 
-    .contact1 h1 {
-        font-size: 35px;
-        color: rgba(23, 22, 22, 0.827);
-    }
-
-
-    label {
-        color: rgb(156, 174, 159);
-        font-size: 15px;
-        font-weight: 600;
-        margin-bottom: 15px;
-    }
-
-    input,
-    textarea {
-        padding: 17px 25px;
-        border-radius: 25px;
-        margin-bottom: 20px;
-        background-color: rgba(193, 244, 139, 0.725);
-        border: 2px solid ghostwhite;
-        color: antiquewhite;
-        outline: none;
-    }
-
-
-
-    .form-txt {
-        margin-bottom: 30px;
-        display: flex;
-        text-align: space-between;
-        text-align: center;
-
-        .form-txt a {
-            color: rgb(63, 197, 202);
-            font-size: 14px;
+        label {
+            color: rgb(156, 174, 159);
+            font-size: 15px;
             font-weight: 600;
-            text-decoration: none;
+            margin-bottom: 15px;
         }
+
+        input,
+        textarea {
+            padding: 17px 25px;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            background-color: rgba(193, 244, 139, 0.725);
+            border: 2px solid ghostwhite;
+            color: antiquewhite;
+            outline: none;
+        }
+
+
+
+        .form-txt {
+            margin-bottom: 30px;
+            display: flex;
+            text-align: space-between;
+            text-align: center;
+
+            .form-txt a {
+                color: rgb(63, 197, 202);
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+
     }
+
+
+
 
 
 
@@ -82,23 +84,29 @@ main {
 
     @media (max-width: 800px) {
 
+
         .formulario {
-            padding: 30px 30px;
+            padding: 50px 30px;
+        
 
             .form2 {
                 flex-direction: column;
-                width: 364px;
+                width: 280px;
+            }
+
+            .contact1 {
+                justify-content: start;
+                font-size: 15px;
+                margin: 10px;
+
+                .contact1 h1 {
+                    font-size: 25px;
+                }
             }
         }
 
-        .contact1 {
-            justify-content: start;
-            font-size: 15px;
 
-            .contact1 h1 {
-                font-size: 25px;
-            }
-        }
+
 
     }
 }

@@ -1,5 +1,6 @@
 main {
     .demanda {
+        margin: 10px;
         padding: 100px;
         display: grid;
         justify-content: space-around;
@@ -73,12 +74,15 @@ main {
 
     @media (max-width: 800px) {
         .demanda {
-            width: 40rem;
+            padding: 5px;
+            width: 20rem;
             display: flex;
             flex-direction: column;
         }
 
         .laboratorio {
+            padding: 5px;
+            width: 20rem;
             display: flex;
             flex-direction: column;
             ul{
@@ -87,15 +91,15 @@ main {
         }
 
         .kinesiologia {
+            padding: 5px;
+            width: 20rem;
             display: flex;
             flex-direction: column;
         }
 
-        .kinesiologia {
-            display: flex;
-            flex-direction: column;
-        }
         .diagnóstico{
+            padding: 5px;
+            width: 20rem;
             display: flex;
             flex-direction: column;
         }

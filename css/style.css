@@ -17,32 +17,23 @@ main .carousel-inner {
   padding: 18px;
   margin: 10px;
 }
-main .Seccion1 {
+main .seccion-iconos {
+  padding: 0px 50px;
   font-size: 400;
-  text-align: center;
+  background: linear-gradient(359deg, rgba(114, 211, 66, 0.863), rgba(174, 195, 57, 0.71));
+}
+main .seccion-iconos .contenido-iconos {
+  color: #cb862d;
+  padding: 50px 50px 0 50px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  text-align: center;
+  border: none;
 }
-main .Seccion1 .Direccion1 {
-  color: white;
-  background-color: #7ac74f;
-  width: 50rem;
-  height: 12rem;
-  padding: 2rem;
-}
-main .Seccion1 .Direccion2 {
-  color: white;
-  background-color: #a1cf6b;
-  width: 50rem;
-  height: 12rem;
-  padding: 2rem;
-}
-main .Seccion1 .Direccion3 {
-  color: white;
-  background-color: rgba(203, 179, 43, 0.9294117647);
-  width: 50rem;
-  height: 12rem;
-  padding: 2rem;
+main .seccion-iconos .contenido-iconos div {
+  flex: 1;
+  margin: 20px 0;
+  border-right: 2px solid #fff;
 }
 main .carta {
   padding: 100px;
@@ -59,37 +50,22 @@ main .carta .card {
   main .imag {
     width: 300px;
   }
-  main .Seccion1 {
-    width: 25rem;
-    height: 36rem;
+  main .seccion-iconos {
+    border: none;
+  }
+  main .seccion-iconos .contenido-iconos {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
   }
-  main .Seccion1 .Direccion1 {
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-    width: 21rem;
-    height: 10rem;
-  }
-  main .Seccion1 .Direccion2 {
-    margin: 20px;
-    padding: 10px;
-    width: 20rem;
-    height: 12rem;
-  }
-  main .Seccion1 .Direccion3 {
-    margin: 20px;
-    padding: 10px;
-    height: 10rem;
-    width: 20rem;
+  main .seccion-iconos .contenido-iconos div {
+    border: none;
   }
   main .carta {
-    margin: 100px;
     display: flex;
     justify-content: space-evenly;
+  }
+  main .carta .card {
+    margin: 50px;
   }
 }
 
@@ -108,18 +84,30 @@ main .carta .card {
   background: rgba(65, 231, 19, 0.218);
 }
 
+main .especialistas {
+  padding: 0 50px;
+  background: linear-gradient(to right, rgba(32, 144, 54, 0.595), rgba(89, 153, 47, 0.5)), url(../recursos/img/especialista.jpeg);
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+}
+main .especialistas .especialistas::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  left: 0;
+}
 main .especialistas .img {
   color: white;
-  width: 100rem;
-  height: 20rem;
-  background: linear-gradient(to right, rgba(32, 144, 54, 0.595), rgba(89, 153, 47, 0.5)), url(../recursos/img/especialista.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 0px;
   position: relative;
+  height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 main .container {
@@ -151,15 +139,20 @@ main .container .conteiner2:hover {
   transform: translate(-5px, -5px);
   background: rgba(206, 231, 19, 0.736);
 }
+@media (max-width: 600px) {
+  main img {
+    max-width: 394px;
+  }
+}
 @media (max-width: 800px) {
   main body {
     padding: 20px;
     padding-top: 32px;
   }
   main .img {
-    padding-top: 32px;
-    padding-left: 40px;
-    max-width: 436px;
+    padding-top: 40px;
+    padding-left: 50px;
+    max-width: 604px;
   }
   main .container {
     padding: 10px;
@@ -197,18 +190,18 @@ main .formulario .contact1 {
   width: 300px;
   margin: 0 0 30px;
 }
-main .contact1 h1, main .contact1 .h1 {
+main .formulario .contact1 .contact1 h1, main .formulario .contact1 .contact1 .h1 {
   font-size: 35px;
-  color: rgba(23, 22, 22, 0.827);
+  color: rgba(92, 88, 88, 0.827);
 }
-main label {
+main .formulario label {
   color: rgb(156, 174, 159);
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 15px;
 }
-main input,
-main textarea {
+main .formulario input,
+main .formulario textarea {
   padding: 17px 25px;
   border-radius: 25px;
   margin-bottom: 20px;
@@ -217,13 +210,13 @@ main textarea {
   color: antiquewhite;
   outline: none;
 }
-main .form-txt {
+main .formulario .form-txt {
   margin-bottom: 30px;
   display: flex;
   text-align: space-between;
   text-align: center;
 }
-main .form-txt .form-txt a {
+main .formulario .form-txt .form-txt a {
   color: rgb(63, 197, 202);
   font-size: 14px;
   font-weight: 600;
@@ -231,46 +224,56 @@ main .form-txt .form-txt a {
 }
 @media (max-width: 800px) {
   main .formulario {
-    padding: 30px 30px;
+    padding: 50px 30px;
   }
   main .formulario .form2 {
     flex-direction: column;
-    width: 364px;
+    width: 280px;
   }
-  main .contact1 {
+  main .formulario .contact1 {
     justify-content: start;
     font-size: 15px;
+    margin: 10px;
   }
-  main .contact1 .contact1 h1, main .contact1 .contact1 .h1 {
+  main .formulario .contact1 .contact1 h1, main .formulario .contact1 .contact1 .h1 {
     font-size: 25px;
   }
 }
 
 main .container-title {
-  color: white;
-  width: 100rem;
+  padding: 0 50px;
   height: 20rem;
   background: linear-gradient(to right, rgba(32, 144, 54, 0.595), rgba(89, 153, 47, 0.5)), url(../recursos/img/turnos.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
-  text-align: center;
-  justify-content: center;
 }
-main .container-title .title {
-  padding: 30px;
+main .container-title .container-title ::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  left: 0;
+}
+main .container-title .box-title {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 0px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 main .turnos {
   padding: 100px;
+  margin: 10px;
   background: white;
-  box-shadow: 20px 20px 20px rgba(26, 26, 26, 0.5);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 30px 30px;
-  border-style: inset;
   grid-auto-flow: row;
   grid-template-areas: "Iturnos turnoseco tgeblix" "docturnos turnoswhatsapp .";
 }
@@ -290,7 +293,7 @@ main .tgeblix {
   grid-area: tgeblix;
 }
 main .iturnos {
-  color: #32c415;
+  color: rgb(97, 97, 93);
   width: 100%;
   margin: 20px;
   justify-content: center;
@@ -298,13 +301,12 @@ main .iturnos {
   background-color: #fff;
   border-radius: 5px;
   justify-content: space-around;
-  box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
 }
 main .parrafot1 {
   display: grid;
 }
 main .turnoseco {
-  color: #32c415;
+  color: rgb(97, 97, 93);
   width: 100%;
   margin: 20px;
   justify-content: center;
@@ -312,10 +314,9 @@ main .turnoseco {
   background-color: #fff;
   border-radius: 5px;
   justify-content: space-around;
-  box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
 }
 main .tgeblix {
-  color: #32c415;
+  color: rgb(97, 97, 93);
   width: 100%;
   margin: 20px;
   justify-content: center;
@@ -323,10 +324,9 @@ main .tgeblix {
   background-color: #ffffff;
   border-radius: 5px;
   justify-content: space-around;
-  box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
 }
 main .docturnos {
-  color: #32c415;
+  color: rgb(97, 97, 93);
   width: 100%;
   margin: 20px;
   justify-content: center;
@@ -334,10 +334,9 @@ main .docturnos {
   background-color: #fff;
   border-radius: 5px;
   justify-content: space-around;
-  box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
 }
 main .turnoswhatsapp {
-  color: #32c415;
+  color: rgb(97, 97, 93);
   width: 100%;
   margin: 20px;
   justify-content: center;
@@ -345,27 +344,16 @@ main .turnoswhatsapp {
   background-color: #fff;
   border-radius: 5px;
   justify-content: space-around;
-  box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
-}
-main .turnoswhatsapp fa-brands fa-whatsapp {
-  width: 30px;
-  color: #097714;
-  margin-left: 20px;
 }
 main .btn {
   margin-left: 20px;
   margin-top: 20px;
 }
 @media (max-width: 800px) {
-  main .container-title {
-    padding-top: 32px;
-    padding-left: 40px;
-    max-width: 436px;
-  }
   main .turnos {
     margin: 20px;
     padding: 20px;
-    width: 400px;
+    max-width: 328px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -373,6 +361,7 @@ main .btn {
 }
 
 main .demanda {
+  margin: 10px;
   padding: 100px;
   display: grid;
   justify-content: space-around;
@@ -436,11 +425,14 @@ main .diagnóstico .imgeco2 {
 }
 @media (max-width: 800px) {
   main .demanda {
-    width: 40rem;
+    padding: 5px;
+    width: 20rem;
     display: flex;
     flex-direction: column;
   }
   main .laboratorio {
+    padding: 5px;
+    width: 20rem;
     display: flex;
     flex-direction: column;
   }
@@ -448,20 +440,21 @@ main .diagnóstico .imgeco2 {
     list-style: none;
   }
   main .kinesiologia {
-    display: flex;
-    flex-direction: column;
-  }
-  main .kinesiologia {
+    padding: 5px;
+    width: 20rem;
     display: flex;
     flex-direction: column;
   }
   main .diagnóstico {
+    padding: 5px;
+    width: 20rem;
     display: flex;
     flex-direction: column;
   }
 }
 
 main .demanda {
+  margin: 10px;
   padding: 100px;
   display: grid;
   justify-content: space-around;
@@ -525,11 +518,14 @@ main .diagnóstico .imgeco2 {
 }
 @media (max-width: 800px) {
   main .demanda {
-    width: 40rem;
+    padding: 5px;
+    width: 20rem;
     display: flex;
     flex-direction: column;
   }
   main .laboratorio {
+    padding: 5px;
+    width: 20rem;
     display: flex;
     flex-direction: column;
   }
@@ -537,14 +533,14 @@ main .diagnóstico .imgeco2 {
     list-style: none;
   }
   main .kinesiologia {
-    display: flex;
-    flex-direction: column;
-  }
-  main .kinesiologia {
+    padding: 5px;
+    width: 20rem;
     display: flex;
     flex-direction: column;
   }
   main .diagnóstico {
+    padding: 5px;
+    width: 20rem;
     display: flex;
     flex-direction: column;
   }
@@ -592,7 +588,12 @@ footer .ubicacion {
     text-align: left;
   }
   .ubicacion {
+    display: flex;
+    justify-content: flex-start;
     padding: 50px;
+  }
+  .footer2 {
+    height: 30px;
   }
 }
 /*!

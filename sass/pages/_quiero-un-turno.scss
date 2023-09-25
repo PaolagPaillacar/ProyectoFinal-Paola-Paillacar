@@ -1,30 +1,45 @@
 main {
     .container-title{
-        color: white;
-        width: 100rem;
+        padding: 0 50px;
         height: 20rem;
         background: linear-gradient(to right, rgba(32, 144, 54, 0.595), rgba(89, 153, 47, 0.5)), url(../recursos/img/turnos.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
         background-position: center;
-        text-align: center;
-        justify-content: center;
-        .title{
-            padding: 30px;
-            justify-content: center;
+
+        .container-title ::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 20rem;
+            left: 0;
         }
+
+        .box-title{
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+            padding:10px 0px ;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+
     }
+
 
     .turnos {
         padding: 100px;
+        margin: 10px;
         background: white;
-        box-shadow: 20px 20px 20px rgba(26, 26, 26, 0.5);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 30px 30px;
-        border-style: inset;
         grid-auto-flow: row;
         
         grid-template-areas:
@@ -56,7 +71,7 @@ main {
 
     
     .iturnos {
-        color: #32c415;
+        color: rgb(97, 97, 93);
         width: 100%;
         margin: 20px;
         justify-content: center;
@@ -64,7 +79,7 @@ main {
         background-color: #fff;
         border-radius: 5px;
         justify-content: space-around;
-        box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
+
 
     }
 
@@ -74,7 +89,7 @@ main {
 
 
     .turnoseco {
-        color: #32c415;
+        color: rgb(97, 97, 93);
         width: 100%;
         margin: 20px;
         justify-content: center;
@@ -82,11 +97,11 @@ main {
         background-color: #fff;
         border-radius: 5px;
         justify-content: space-around;
-        box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
+        
     }
 
     .tgeblix {
-        color: #32c415;
+        color: rgb(97, 97, 93);
         width: 100%;
         margin: 20px;
         justify-content: center;
@@ -94,11 +109,11 @@ main {
         background-color: #ffffff;
         border-radius: 5px;
         justify-content: space-around;
-        box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
+       
     }
 
     .docturnos {
-        color: #32c415;
+        color: rgb(97, 97, 93);
         width: 100%;
         margin: 20px;
         justify-content: center;
@@ -106,14 +121,14 @@ main {
         background-color: #fff;
         border-radius: 5px;
         justify-content: space-around;
-        box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
+        
     }
         
         
     
 
     .turnoswhatsapp {
-        color: #32c415;
+        color: rgb(97, 97, 93);
         width: 100%;
         margin: 20px;
         justify-content: center;
@@ -121,14 +136,6 @@ main {
         background-color: #fff;
         border-radius: 5px;
         justify-content: space-around;
-        box-shadow: 0px 1px 10px rbg(0 0 0 0.2);
-    
-
-        fa-brands fa-whatsapp {
-            width: 30px;
-            color: #097714;
-            margin-left: 20px;
-        }
 
     }
 
@@ -138,17 +145,12 @@ main {
 
     }
 
-    @media (max-width: 800px) {
-        .container-title{
-            padding-top: 32px;
-            padding-left: 40px;
-          max-width: 436px;
-        }       
+    @media (max-width: 800px) {  
 
         .turnos {
             margin: 20px;
             padding: 20px;
-            width: 400px;
+            max-width: 328px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;

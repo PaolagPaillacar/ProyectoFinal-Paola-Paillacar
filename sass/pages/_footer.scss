@@ -51,6 +51,12 @@ footer {
         
     }
       .ubicacion {
+        display: flex;
+        justify-content: flex-start;
         padding: 50px;
       }
+    .footer2{
+        height: 30px;
+    }
+
 }
