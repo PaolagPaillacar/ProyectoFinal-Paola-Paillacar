@@ -1,12 +1,15 @@
 main {
     .demanda {
-        margin: 10px;
+        color:rgb(97, 97, 93) ;
         padding: 100px;
         display: grid;
         justify-content: space-around;
-        width: 100rem;
+        width: 100%;
         border-bottom: solid 2px #918989;
         grid-template-columns: 40% 40%;
+        .text-demanda{
+            color: #7cb518;
+        }
 
         .img-pediatria {
             width: 100%;
@@ -16,12 +19,16 @@ main {
     }
 
     .laboratorio {
+        color:rgb(97, 97, 93) ;
         padding: 100px;
         display: grid;
         justify-content: space-around;
         width: 100%;
         border-bottom: solid 2px #918989;
         grid-template-columns: 40% 40%;
+       .text-laboratorio{
+        color: #7cb518;
+       }
         ul{
             list-style: none;
         }
@@ -34,12 +41,16 @@ main {
     }
 
     .kinesiologia {
+        color:rgb(97, 97, 93) ;
         padding: 100px;
         display: grid;
         justify-content: space-around;
         width: 100%;
         border-bottom: solid 2px #918989;
         grid-template-columns: 40% 40%;
+        .text-kinesiologia{
+            color: #7cb518;
+        }
 
         .img-kinesiologia {
             width: 100%;
@@ -49,12 +60,17 @@ main {
     }
 
     .diagnóstico {
+        color: rgb(97, 97, 93);
         padding: 100px;
         display: grid;
         justify-content: space-around;
         width: 100%;
         border-bottom: solid 2px #918989;
         grid-template-columns: 40% 40%;
+
+        .text-diagnostico{
+            color: #7cb518;
+        }
 
         .imgeco1 {
             width: 100%;
@@ -74,34 +90,61 @@ main {
 
     @media (max-width: 800px) {
         .demanda {
-            padding: 5px;
-            width: 20rem;
+            text-align: center;
+            padding: 34px;
+            width: 22rem;
             display: flex;
             flex-direction: column;
+            .text-demanda{
+              border: 1px solid;
+              border-radius: 27px;
+              margin: 22px;
+              padding: 10px;
+            }
         }
 
         .laboratorio {
-            padding: 5px;
-            width: 20rem;
+            text-align: center;
+            padding: 34px;
+            width: 22rem;
             display: flex;
             flex-direction: column;
-            ul{
-                list-style: none;
+            .text-laboratorio{
+                border: 1px solid;
+              border-radius: 27px;
+              margin: 22px;
+              padding: 10px;
             }
         }
 
         .kinesiologia {
-            padding: 5px;
-            width: 20rem;
+            text-align: center;
+            padding: 34px;
+            width: 22rem;
             display: flex;
             flex-direction: column;
+            .text-kinesiologia{
+                border: 1px solid;
+                border-radius: 27px;
+                margin: 22px;
+                padding: 10px;
+              
+            }
         }
 
         .diagnóstico{
-            padding: 5px;
-            width: 20rem;
+            text-align: center;
+            padding: 34px;
+            width: 22rem;
             display: flex;
             flex-direction: column;
+            .text-diagnostico{
+                border: 1px solid;
+                border-radius: 27px;
+                margin: 22px;
+                padding: 10px;
+              
+            }
         }
 
     }
